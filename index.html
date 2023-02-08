@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Scripts-->
-      <script src="./src/scripts/database.js" defer></script>
-      <script src="./src/scripts/index.js" defer></script>
+      <script type="module" src="./src/scripts/database.js" defer></script>
+      <script type="module" src="./src/scripts/index.js" defer></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
@@ -35,25 +35,30 @@
     <main>
       <section class="primary__section">
         <div class="user__config">
-
+            <img src="./src/assets/img/Ellipse 1.svg" class="img__section1" alt="">
+            <h1 class="h1__section1">Samuel Leão</h1>
+            <span class="span__section1">Front end Engineer</span>
         </div>
         <form>
-          <input type="text" placeholder="Digite titulo do post">
-          <input type="text" placeholder="Digitar descricão do post">
-          <button>Postar</button>
+          <input class="input__title" type="text" placeholder="Digite titulo do post">
+          <input class="input__post" type="text" placeholder="Digitar descricão do post">
+          <button class="btn__postar">Postar</button>
         </form>
       </section>
       <section class="list__container">
         <h2 class="post__list">Posts</h2>
-        <ul class="card_li">
-          <li>
-
-          </li>
-        </ul>
-      </section>
-      <dialog class="modal__container" open="FavDialog">
+         
+      </section>  
+      <!-- <dialog class="modal__container" open="FavDialog"> -->
 
       </dialog>
     </main>
+    <aside class="aside__suggestUsers">
+      <ul>
+        <li>
+
+        </li>
+      </ul>
+    </aside>
   </body>
 </html>
