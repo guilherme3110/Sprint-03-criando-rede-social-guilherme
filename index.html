@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--Scripts-->
+      <script src="./src/scripts/database.js" defer></script>
+      <script src="./src/scripts/index.js" defer></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
@@ -16,8 +19,41 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    
 
     <title>Criando rede social</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="titulo__pagina">TechPosters</li>
+          <li class="header__sair">Sair</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="primary__section">
+        <div class="user__config">
+
+        </div>
+        <form>
+          <input type="text" placeholder="Digite titulo do post">
+          <input type="text" placeholder="Digitar descricão do post">
+          <button>Postar</button>
+        </form>
+      </section>
+      <section class="list__container">
+        <h2 class="post__list">Posts</h2>
+        <ul class="card_li">
+          <li>
+
+          </li>
+        </ul>
+      </section>
+      <dialog class="modal__container" open="FavDialog">
+
+      </dialog>
+    </main>
+  </body>
 </html>
