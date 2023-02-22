@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Scripts-->
-      <script type="module" src="./src/scripts/database.js" defer></script>
-      <script type="module" src="./src/scripts/index.js" defer></script>
+    <script type="module" src="./src/scripts/index.js" defer></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="./src/styles/reset.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyle.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+
 
     <!-- FONTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,41 +26,25 @@
     <title>Criando rede social</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li class="titulo__pagina">TechPosters</li>
-          <li class="header__sair">Sair</li>
-        </ul>
-      </nav>
+    <header class="header">
+      <h2 class="white">TechPosters</h2>
+      <a href="" target="_self" class="leave-link">Sair</a>
     </header>
-    <main>
-      <section class="primary__section">
-        <div class="user__config">
-            <img src="./src/assets/img/Ellipse 1.svg" class="img__section1" alt="">
-            <h1 class="h1__section1">Samuel Leão</h1>
-            <span class="span__section1">Front end Engineer</span>
-        </div>
-        <form>
-          <input class="input__title" type="text" placeholder="Digite titulo do post">
-          <input class="input__post" type="text" placeholder="Digitar descricão do post">
-          <button class="btn__postar">Postar</button>
-        </form>
-      </section>
-      <section class="list__container">
-        <h2 class="post__list">Posts</h2>
-         
-      </section>  
-      <!-- <dialog class="modal__container" open="FavDialog"> -->
-
-      </dialog>
-    </main>
-    <aside class="aside__suggestUsers">
-      <ul>
-        <li>
-
-        </li>
-      </ul>
-    </aside>
+  <main>
+    <container class="content-container">
+      <section class="section-post-and-follow">
+      <div class="user-post">
+      </div>
+  
+      <aside class="aside">
+        <h2 class="suggestion-h2">Sugestões para você seguir</h2>
+        <div class="div-aside"></div>
+      </aside>
+    </section>
+    <h1 class="posts-h1">Posts</h1>
+    <ul class="ul-posts">
+    </ul>
+  </container>
+  </main>
   </body>
 </html>

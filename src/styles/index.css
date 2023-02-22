@@ -1,144 +1,311 @@
-@media (max-width: 700px){
-    body{
-        max-width: 700px;
-        display: flex;
-        margin: 0 auto;
-        flex-wrap: wrap
-    }
-    header{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        height: 80px;
-        padding: 20px 30px;
-        align-items: center;
-        background-color: #212529;
-        color: #FFFFFF;
-    }
-    ul{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 250px;
-    
-    }
-    .primary__section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-        padding-top: 35px;
-        padding-left: 25px;
-    }
-    .user__config{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 20px 20px;
-        
-    }
-    .img__section1{
-        width: 50px;
-    }
-    .h1__section1{
-        display: flex;
-        position: relative;
-        bottom: 40px;
-        left: 65px;
-    }
-    .span__section1{
-        display: flex;
-        position: relative;
-        bottom: 30px;
-        left: 65px;
+.header{
+    width: 100%;
+    height: 4.75rem;
+    background-color: var(--grey-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    padding: 1.8rem 1.2rem;
+}
 
-        font-size: 12px;
-    }
+.white {
+    color: var(--white-fixed);
+    line-height: 1rem;
+}
 
-    form{
-        width: 400px;
-        display: flex;
-        height: 275px;
-        display: flex;
-        flex-direction: column;
-        padding-left: 15px;
-        
-    }
-    input{
-        width: 350px;
-        height: 60px;
-        padding-left: 20px;
-        display: flex;
-        flex-direction: column;
-        border-radius: 4px;
-        border-color: #212529;
-        gap: 25px;
-    }
-    .input__title{
-        width: 380px;
-        height: 40px;
-        border-radius: 4px;
-        border: 2px solid #DEE2E6;
-        
-        
-    }
-    .input__post{
-        width: 380px;
-        height: 150px;
-        border-radius: 4px;
-        border: 2px solid #DEE2E6;
-        margin-top: 20px;
-        display: flex;
-    }
-    .btn__postar{
-        display: flex;
-        position: relative;
-        justify-content: center;
-        width: 60px;
-        align-items: center;
-        height: 30px;
-        left: 320px;
-        top: 15px;
-        background-color: #DEE2E6;
-        color: #868E96;
-        font-size: 12px;
-    }
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem;
+}
 
-    .list__container{
-        display: flex;
-        width: 81%;
-        
-        flex-direction: column;
-        
-        padding-top: 25px;
-        padding-left: 45px;
+.content-container{
+    width: 80%;
+}
+
+.section-post-and-follow{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-post{
+    width: 100%;
+    display: flex;
+    gap: 1.35rem;
+    padding-top: 9.5rem;
+    flex-direction: column;
+}
+
+.divider-user-button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    height: 6.25rem;
+}
+
+.user-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 10.1875rem;
+}
+
+.user-desc-span {
+    color: var(--grey-2);
+    font-size: 0.875rem;
+}
+
+.divider-icon-user {
+    display: flex;
+    flex-direction: row;
+    width: 14.1875rem;
+    justify-content: space-around;
+}
+
+.title-area {
+    width: 100%;
+    height: 3.25rem;
+
+    border: 0.125rem solid var(--grey-4);
+    border-radius: 0.25rem;
+    line-height: 1.1875;
+
+    padding: 1rem 1.25rem;
+}
+
+.post-area {
+    width: 100%;
+    height: 8.125rem;
+    border: 0.125rem solid var(--grey-4);
+    border-radius: 0.25rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.1875;
+
+    padding: 1rem 1.25rem;
+}
+
+.post-area::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.post-button {
+    width: 4.3125rem;
+    height: 2.375rem;
+    border-radius: 0.25rem;
+    background-color: var(--brand-1);
+    color: var(--white-fixed);
+    font-size: 0.875rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    font-weight: 600;
+    align-self: flex-end;
+}
+
+.post-button:hover {
+    background-color: var(--brand-2);
+}
+
+.post-button:focus {
+    background-color: var(--grey-4);
+    color: var(--grey-3);
+}
+
+.aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.div-aside {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    height: 9.375rem;
+}
+
+.follow-button {
+    width: 4.25rem;
+    height: 1.75rem;
+    cursor: pointer;
+    border: 0.0625rem solid var(--grey-1);
+    border-radius: 0.125rem;
+    background-color: var(--white-fixed);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.followed {
+    width: 5.5625rem;
+    height: 1.75rem;
+    cursor: pointer;
+    border-radius: 0.125rem;
+    border: 0.0625rem solid var(--brand-1);
+    background-color: var(--brand-1);
+    color: var(--white-fixed);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.follow-button:hover {
+    background-color: var(--brand-3);
+    border: 0.0625rem solid var(--brand-1);
+    color: var(--brand-1);
+
+}
+
+.ul-posts {
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.list-post {
+    height: 29.125rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 4.125rem;
+}
+
+.subtitle {
+    color: var(--grey-2);
+    line-height: 1.75rem;
+    font-size: 1rem;
+}
+
+.divider-button-heart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.open-post-button {
+    width: 5.75rem;
+    height: 2.375rem;
+    padding: 0rem 0.75rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    background-color: var(--grey-1);
+    color: var(--white-fixed);
+    font-weight: 600;
+    line-height: 17px;
+    margin-right: 1.875rem;
+    cursor: pointer;
+}
+
+.open-post-button:hover{
+    background-color: var(--grey-0);
+}
+
+.liked-button {
+    font-size: 1.5625rem;
+    cursor: pointer;
+    padding-right: 0.3125rem;
+    color: var(--like);
+}
+
+.like-heart {
+    font-size: 1.5625rem;
+    color: var(--grey-opacity-1);
+    cursor: pointer;
+    padding-right: 0.3125rem;
+}
+
+.like-heart:hover {
+    color: var(--like);
+}
+
+.heart-count {
+    font-size: 0.875rem;
+}
+
+.modal {
+    position: fixed;
+    border-radius: 0.5rem;
+    border: 0rem transparent;
+    z-index: 2;
+}
+
+.div-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2.5rem 1.25rem;
+}
+
+.h1-modal {
+    padding: 2rem 0rem 0rem 0rem;
+}
+
+.span-modal {
+    color: var(--grey-2);
+    line-height: 1.75rem;
+    font-size: 1rem;
+    padding: 2rem 0rem 0rem 0rem;
+}
+
+.span-close {
+    font-size: 1.75rem;
+    color: var(--grey-3);
+}
+
+.button-close {
+    top: 1.125rem;
+    right: 0.9063rem;
+    position: absolute;
+    background-color: var(--grey-5);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+dialog::backdrop {
+    background-color: var(--grey-opacity-1);
+  }
+
+@media (max-width: 768px) {
+    .modal {
+        width: 80%;
+        height: 47.5625rem;
     }
-    
+}
+
+@media (max-width: 350px) {
+    .list-post {
+        height: 40rem;
     }
-    .post__list{
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        padding-bottom: 25px;
+}
+
+@media (max-width: 237px) {
+    .list-post {
+        height: 50rem;
     }
-    ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding-top: 25px;
-        padding-left: 35px;
+}
+
+@media (max-width: 187px) {
+    .list-post {
+        height: 60rem;
     }
-    li{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        
+}
+
+@media (max-width: 145px) {
+    .list-post {
+        height: 70rem;
     }
-    
-        
-    
-    li > img{
-        width: 50px;
-    }
+}
